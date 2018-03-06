@@ -22,6 +22,12 @@ ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
 THIS SOFTWARE.
 ****************************************************************/
 
+#define execute awk_execute
+#define yyerror awk_yyerror
+#define yylex awk_yylex
+#define tfree awk_tfree
+#define hash awk_hash
+
 extern	int	yywrap(void);
 extern	void	setfname(Cell *);
 extern	int	constnode(Node *);
